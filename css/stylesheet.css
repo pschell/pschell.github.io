@@ -4,6 +4,7 @@
 }
 body{
   width: 100%;
+  /*min-height: 1000px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,85 +18,42 @@ body{
   justify-content: center;
   }
 
-  img{
+  #logo{
   height: 100px;
   }
 
-  .reihe {
-    width: 25%;
-    float: left;
+  #columns {
+    column-count: 3;
+  	column-width: 300px;
+  	column-gap: 15px;
+    width: 85%;
+  	max-width: 1100px;
+  	margin: 50px auto;
   }
 
-  .grid {
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;;
-    margin: 0 auto;
-    overflow: hidden;
+  div#columns figure {
+  	background: #27ffc9;
+  	/*border: 2px solid #fcfcfc;*/
+  	margin: 0 10px 10px, white;
+  	padding: 10px;
+  	padding-bottom: 10px;
+    /*display: inline-block;*/
+    column-break-inside: avoid;
   }
 
-  .center{
-  text-align: center;
+  div#columns figure img {
+  	width: 250px;
+    height: auto;
+  	padding-bottom: 15px;
+  	margin-bottom: 5px;
   }
 
-  .bild_1{
-  width:200px;
-  height:300px;
-  background-color:#27ffc9;
-  margin: 20px;
-  display:inline-block;
-  top: 0px;
-  }
-  .bild_2{
-  width:200px;
-  height: 100px;
-  background-color:#27ffc9;
-  margin: 20px;
-  display:inline-block;
-  top: 0px;
-  }
-  .bild_3{
-  width:200px;
-  height: 400px;
-  background-color:#27ffc9;
-  margin: 20px;
-  display:inline-block;
-  top: 0px;
-  }
-  .bild_4{
-  width:200px;
-  height: 100px;
-  background-color:#27ffc9;
-  margin: 20px;
-  display:inline-block;
-  top: 0px;
-  }
-  .bild_5{
-  width:200px;
-  height: 200px;
-  background-color:#27ffc9;
-  margin: 20px;
-  display:inline-block;
-  top: 0px;
-  }
-  .bild_6{
-  width:200px;
-  height: 300px;
-  background-color:#27ffc9;
-  margin: 20px;
-  display:inline-block;
-  top: 0px;
+  @media screen and (max-width: 750px) {
+  #columns { column-gap: 0px; }
+  #columns figure { width: 100%; }
+}
 
-  }
-  .bild_7{
-  width:200px;
-  height: 300px;
-  background-color:#27ffc9;
-  margin: 20px;
-  display:inline-block;
-  top: 0px;
-  }
-  .footer {
+  div.footer {
   position:fixed;
   bottom: 0;
   margin:0;
@@ -104,7 +62,3 @@ body{
   width:100%;
   left: 0px;
   }
-
-/*.clear {
-  clear: both;
-}*/
