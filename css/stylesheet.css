@@ -21,7 +21,7 @@ body{
   }
 
   #logo{
-  height: 150px;
+  height: 180px;
   }
 
 #wrapper{
@@ -36,14 +36,14 @@ body{
    webkit-column-gap:10px;
    webkit-column-fill:auto;
    column-count: 2;
-   column-gap: 60px;
+   column-gap: 150px;
    column-fill: auto;
  }
 
  .grid{
    display: inline-block;
-   border: 6px solid #27ffc9;
-   margin: 0 2px 60px;
+   /*border: 6px solid #27ffc9;*/
+   margin: 0 2px 80px;
    webkit-column-break-inside: avoid;
    column-break-inside: avoid;
 
@@ -58,20 +58,20 @@ body{
    border: 10px ,#27ffc9;
  }
 
- @media (min-width: 560px)
+ @media (min-width: 660px)
  { #columns
    {webkit-column-count: 1;
    column-count: 1;}}
 
- @media (min-width: 780px)
+ @media (min-width: 900px)
  { #columns
    {webkit-column-count: 2;
    column-count: 2;}}
 
  @media (min-width: 1100px)
  { #columns
-   {webkit-column-count: 3;
-   column-count: 3;}}
+   {webkit-column-count: 2;
+   column-count: 2;}}
 
 
 
@@ -80,7 +80,6 @@ body{
   position:fixed;
   bottom: 0;
   margin:0;
-  /*background-color:#27ffc9;*/
   height:100px;
   width:100%;
   left: 0px;
@@ -91,6 +90,9 @@ body{
 
   p {
   font-family: 'Astloch', cursive;
-  font-style: 700;
+  font-weight: 600;
   font-size: 3em;
+  }
+  .menu_mitte{
+    color: #27ffc9;
   }
