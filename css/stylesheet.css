@@ -3,6 +3,7 @@
   padding:0;
 }
 body{
+  zoom:50%;
   width: 100%;
   display: flex;
   flex-direction: column;
