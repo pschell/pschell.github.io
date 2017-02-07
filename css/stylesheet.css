@@ -150,10 +150,14 @@ background-color: #484848;
    border: 10px ,#27ffc9;
  }
 
- @media (min-width: 560px)
+ @media (min-width: 200px)
  { #columns
    {webkit-column-count: 1;
    column-count: 1;}
+
+   .body_back{
+     background-color:#505355;
+   }
 
    header{
      font-weight: 600;
@@ -165,7 +169,7 @@ background-color: #484848;
      margin-right: 120px;
    }
 
- @media (min-width: 900px)
+ @media (min-width: 1000px)
  { #columns
    {webkit-column-count: 2;
    column-count: 2;}
