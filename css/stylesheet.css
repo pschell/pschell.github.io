@@ -22,6 +22,10 @@ body{
   font-family: 'Astloch', cursive;
   }
 
+  .filter{
+    height: 40px;
+  }
+
   .none_visible{
   height:100px;
   width: 600px;
